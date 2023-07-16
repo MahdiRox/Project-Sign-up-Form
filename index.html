@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="side-left">
+      <div class="lego-background">
+        <img src="./odin-lined.png" alt="odin-lego" />
+        <p class="right-to-lego">ODIN</p>
+      </div>
+    </div>
+    <div class="side-right">
+      <p class="header-text">
+        This is not a real online service! You know you need something <br />
+        like this in your life to help you realize your deepest dreams. <br />
+        Sign up now to get started. <br /><br />
+        You know you want to.
+      </p>
+      <form id="form" action="/submit" method="post">
+        <h2>Let's do this!</h2>
+        <div class="form">
+          <div class="left">
+            <div class="label">
+              <label for="first-name">FIRST NAME</label>
+              <input
+                type="text"
+                id="first-name"
+                name="fname"
+                required
+                autocomplete
+              />
+            </div>
+            <div class="label">
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete
+              />
+            </div>
+            <div class="label">
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" name="pass" required />
+            </div>
+          </div>
+          <div class="right">
+            <div class="label">
+              <label for="last-name">LAST NAME</label>
+              <input
+                type="text"
+                id="last-name"
+                name="lname"
+                required
+                autocomplete
+              />
+            </div>
+            <div class="label">
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" name="phone" required autocomplete />
+            </div>
+
+            <div class="label">
+              <label for="confirm-pass">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                id="confirm-pass"
+                name="conf-pass"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <p class="pass-error"></p>
+      </form>
+      <button class="submit" form="form">Create Account</button>
+      <br />
+      <br />
+      <p>Already have an account? <a href="">Log in</a></p>
+    </div>
+  </body>
+</html>
